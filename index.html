@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        
+    </head>
+    <body> 
+
+        <img src="mbolo.png" style="width: 185px; height: 90px; float: left;">
+        <div style="margin-top: 0px; float: right; ">
+            <br>
+            <button id="option" onclick="Open()"  type="button" class="btn btn-primary"><b> Services</b></button>
+
+            <button id="fermer" onclick="Close()"  type="button" class="btn btn-danger"  style=" display:none;"><b> Fermer</b></button>
+            
+
+            <div id="navigue"   style="display:none; background-color: azure; width:250px; margin-right: 10px;">
+               
+                
+               <hr>
+               <p > <a href="mbmw2"> <b>Rechercher une Naissance</b> </a></p>
+               <hr>
+
+            <script>
+                 function Open(){
+    document.getElementById("navigue").style.display="block";
+    document.getElementById("fermer").style.display="block";
+    document.getElementById("option").style.display="none";
+  }
+
+ 
+  function Close(){
+
+   document.getElementById("option").style.display = "block";
+    document.getElementById("navigue").style.display = "none";
+    document.getElementById("fermer").style.display="none";  
+  }
+            </script>
+            </div>
+
+
+        </div>
+        
+      
+      <br><br>
+        <center>
+       <br><br>
+           <iframe id="client" src="https://script.google.com/macros/s/AKfycbzwJle6y2Qdn9MP0pDhtiWYMo7YRZaydpbbV0qZ99Pxh2Jti9SN0Shbu-x---mudImEoA/exec" frameborder="0" width="100%" height="1280px" ></iframe> 
+
+  
+        </center>
+      </body>
+</html>
